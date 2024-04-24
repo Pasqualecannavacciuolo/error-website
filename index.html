@@ -10,11 +10,15 @@
 
     <h1 class="title">Error website</h1>
 
+    <div id="hostname"></div>
+
     <iframe id="iframeDestinatario" 
     src="http://localhost:3000" 
     style="width: 750px; height: 750px; border: 5px solid #b4b5e0;"></iframe>
 
     <script>
+        var hostname = window.location.hostname;
+        document.getElementById("hostname").innerText = hostname;
         console.log(window.location.hostname)
     </script>
 
